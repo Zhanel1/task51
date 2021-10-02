@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&family=Raleway:wght@300;400;500;600;700&family=Syncopate:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #1A1B27;
+}
+
+.header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  background: #1A1B27;
+  justify-content: center;
+}
+
+.header__logo {
+  width: 90px;
+  height: 60px;
+  background: #4FA0FF;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.header__logo .logo__text {
+  padding-top: 20px;
+  font-family: Poppins;
+  line-height: 20px;
+  letter-spacing: 6%;
+  color: #F6F6F6;
+  font-size: 18px;
+}
+
+.header__nav {
+  display: flex;
+  width: 714px;
+  height: 20px;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.header__link {
+  font-family: Syncopate;
+  font-weight: 700px;
+  font-size: 16px;
+  font-style: bold;
+  text-transform: uppercase;
+}
+
+.header__link a {
+  text-decoration: none;
+  color: #F6F6F6;
+}
+
+.header__link .about {
+  color: #4FA0FF;
+}
+
+.wrapper {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main {
+  width: 100%;
+  height: 900px;
+  display: flex;
+  background-color: #4FA0FF;
+}
+
+.main-body {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main__titles {
+  width: 25%;
+  height: 214px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-self: center;
+  color: #F6F6F6;
+}
+
+.main__titles .text1 {
+  display: flex;
+  font-family: Poppins;
+  font-weight: 700px;
+  line-height: 70px;
+  font-style: bold;
+  letter-spacing: 2%;
+  font-size: 80px;
+}
+
+.main__titles .text2 {
+  display: flex;
+  font-family: Raleway;
+  font-weight: 500px;
+  width: 470px;
+  font-style: medium;
+  letter-spacing: 1%;
+  font-size: 32px;
+  text-align: left;
+}
+
+.main__titles .text3 {
+  display: flex;
+  font-family: Raleway;
+  font-weight: 400px;
+  font-style: Regular;
+  letter-spacing: 1%;
+  font-size: 22px;
+}
+
+.main__cart {
+  width: 58%;
+  height: 1251px;
+  margin-top: 100px;
+  padding-right: 0;
+  border: 2px solid red;
+}
+
+.block-cart {
+  width: 100%;
+  height: 100px;
+  border: 2px solid green;
+}
+/*# sourceMappingURL=index.css.map */
