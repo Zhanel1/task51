@@ -5,7 +5,7 @@ var onScrollHandler = function() {
    // позиция скролла
    var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
  
-   // проверка на определqwdqwdенных местах по пикселям
+   // проверка на определенных местах по пикселям.
    if (scrollTop > 4500 && scrollTop < 5200) {
      // меняем то что нужно
      yourImageElement.src = ''
