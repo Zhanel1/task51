@@ -5,10 +5,14 @@ var onScrollHandler = function() {
    // позиция скролла
    var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
  
-   // проверка на определенных местах по пикселям.
-   if (scrollTop > 4500 && scrollTop < 5200) {
+   // проверка на определенных местах по пикселям..
+   if (scrollTop > 2801 && scrollTop < 2900) {
      // меняем то что нужно
-     yourImageElement.src = ''
+     yourImageElement.src = './img/how/2.png'
+   }
+   else if(scrollTop <= 2900 ){
+      yourImageElement.src = './img/how/1.png'
+     
    }
  
    console.log(scrollTop)
