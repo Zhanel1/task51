@@ -396,13 +396,69 @@ body{
 
     .wrapper{
         display: flex;
-        flex-direction: row; 
+        flex-direction: column; 
         justify-content: flex-start;
         margin-top: 110px;
         height: 100%;
+        &__row{
+            display: flex;
+            margin-top: 70px;
+            flex-direction: row; 
+            justify-content: flex-start;
+            height: calc(100%-37px);
+        }
     }
     .carts__title{
         text-transform: uppercase;
+    }
+    .slider{
+        display: flex;
+        justify-content: center;
+        width: 130px;
+        height: 1625px;
+        margin-right: 160px;
+        position: relative;
+        .circle__year{
+            width: 130px;
+            height: 130px;
+            background-color: $white;
+            border-radius: 50%;
+            box-shadow: 9px 9px 45px rgba(113, 113, 255, 0.25);
+            position: absolute;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            b{
+                font-family: Syncopate;
+                font-weight: 700;
+                font-size: 28px;
+                color: #00C2FF;
+                z-index: 2;
+            }
+        }
+        #circle__2022{
+            margin-top: 388px;
+        }
+        .line{
+            display: flex;
+            width: 8px;
+            height: 1557px;
+            position: absolute;
+            z-index: 0;
+            margin-top: 68px;
+            background-image: url('../img/roadmap/Rectangle.png');
+        }
+        .pointer{
+            width: 24px;
+            height: 24px;
+            background-color: $white;
+            border-radius: 50%;
+            margin-top: 257px;
+            position: absolute;
+            z-index: 1;
+            box-shadow: 0px 3.57px 7.13px rgba(0, 0, 0, 0.15);
+        }
     }
     &__levels{
         display: flex;
