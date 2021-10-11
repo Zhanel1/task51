@@ -294,12 +294,9 @@ body{
     margin-top: 110px;
 
     .wrapper{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
         height: 100%;
         margin: 0 auto;
+        position: relative;
     }
     &__description{
         display: flex;
@@ -317,8 +314,10 @@ body{
     &__images{
         display: flex;
         flex-direction: column;
-        height: 100%;
+        height: 573px;
         width: 740px;
+        top: 0;
+        position: sticky;
         img{
             width: 100%;
         }
