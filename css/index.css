@@ -312,12 +312,9 @@ body {
 }
 
 .content .wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
   height: 100%;
   margin: 0 auto;
+  position: relative;
 }
 
 .content__description {
@@ -337,8 +334,10 @@ body {
 .content__images {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 573px;
   width: 740px;
+  top: 0;
+  position: sticky;
 }
 
 .content__images img {
@@ -491,10 +490,11 @@ body {
   height: 24px;
   background-color: #F6F6F6;
   border-radius: 50%;
-  margin-top: 257px;
   position: absolute;
   z-index: 1;
   box-shadow: 0px 3.57px 7.13px rgba(0, 0, 0, 0.15);
+  top: 0;
+  position: absolute;
 }
 
 .roadmap__levels {
@@ -547,115 +547,118 @@ body {
 .team .wrapper {
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  margin-bottom: 140px;
+  justify-content: unset;
   height: 525px;
-  border: 1px solid blue;
+  z-index: 2;
 }
 
 .team .carts__title {
   text-transform: uppercase;
+  margin-bottom: 72px;
 }
 
-.team .carts {
+.team .people {
   width: 100%;
-  height: 90%;
-  border: 1px solid red;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.team .cart {
+.team .staff {
   position: relative;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  border: 1px solid linear-gradient(#81B5C0 0%, #314DB4 100%);
+  background: linear-gradient(117.15deg, rgba(255, 255, 255, 0.25) 1.63%, rgba(255, 255, 255, 0.1) 97.11%);
+  box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(40px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 25px;
+  padding: 30px 23px;
 }
 
-.team img {
-  position: absolute;
-  display: flex;
+.team .staff .image {
   width: 100%;
-}
-
-.team .sphere {
-  z-index: 1;
-}
-
-.team .item_1 {
-  width: 340px;
-  height: 388px;
-  z-index: 1;
-}
-
-.team .item_2 {
-  width: 294px;
   height: 230px;
-  margin-top: 30px;
-  margin-left: 23px;
   z-index: 3;
+  margin-bottom: 30px;
 }
 
-.team .position {
-  position: absolute;
-  z-index: 2;
-  font-family: Syncopate;
-  font-weight: 700;
-  color: #F6F6F6;
-  font-size: 18px;
-  line-height: 24px;
-  line-height: 128px;
-  text-align: left;
-  letter-spacing: 3%;
-  margin-bottom: 40px;
-  margin-left: 107px;
-  padding-top: 10px;
+.team .staff .image img {
+  width: 100%;
+  height: 100%;
 }
 
-.team .name {
+.team .staff .text {
   position: absolute;
-  z-index: 2;
+  width: 100%;
+  height: 216px;
+  padding-top: 118px;
   font-family: Raleway;
-  font-weight: 700;
-  color: #F6F6F6;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  /* or 27px */
+  display: flex;
+  align-items: center;
+  /* Colors/White */
+  color: #FFFFFF;
+}
+
+.team .staff .name {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+  color: white;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
   font-size: 22px;
   line-height: 24px;
-  line-height: 93%;
-  text-align: left;
-  letter-spacing: 3%;
-  margin-bottom: 74px;
-  margin-left: 144px;
+  letter-spacing: 0.03em;
+  z-index: 4;
 }
 
-.team .cart__1 .position {
-  margin-top: 290px;
+.team .staff .job {
+  text-align: center;
+  color: white;
+  font-family: Syncopate;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  z-index: 4;
 }
 
-.team .item_3 {
-  width: 85.61px;
-  height: 85.66px;
-  align-self: flex-end;
+.team .staff .sphere {
+  position: absolute;
 }
 
-.team .item_4 {
-  width: 55px;
-  height: 55.03px;
-  margin-bottom: 140px;
-  align-self: flex-start;
-  margin-top: 340px;
+.team .staff .sphere1 {
+  top: -22px;
+  right: -14px;
 }
 
-.team .item_5 {
-  width: 56.61px;
-  height: 56.64px;
-  margin-left: 298px;
-  margin-top: 243px;
+.team .staff .sphere2 {
+  bottom: -27px;
+  left: -20px;
 }
 
-.team .item_6 {
-  width: 123px;
-  height: 123.06px;
+.team .staff .sphere3 {
+  bottom: 88.36px;
+  right: -14.61px;
+}
+
+.team .staff .sphere4 {
+  top: -15px;
+  left: -20px;
+}
+
+.team .cart:not(:last-child) {
+  margin-right: 35px;
 }
 
 .border {
