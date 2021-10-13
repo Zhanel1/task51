@@ -321,6 +321,21 @@ body {
   color: #333333;
 }
 
+.solution {
+  width: 100vw;
+  height: auto;
+  margin-top: 119px;
+}
+
+.solution .wrapper {
+  margin: 0 auto;
+}
+
+.solution__image {
+  width: 100vw;
+  height: 100%;
+}
+
 .content {
   display: flex;
   width: 100vw;
@@ -837,6 +852,9 @@ body {
     text-align: center;
     margin-bottom: -60px;
   }
+  .roadmap .wrapper {
+    width: 100%;
+  }
   .roadmap .wrapper__row {
     padding-left: 16px;
     padding-right: 22px;
@@ -890,6 +908,9 @@ body {
     width: 190px;
     list-style-image: url(../img/roadmap/3.svg);
   }
+  .team {
+    margin: 0 auto;
+  }
   .team .staff-4 .text {
     font-size: 17px;
     line-height: 150%;
@@ -918,6 +939,12 @@ body {
   }
   .footer__right {
     margin-bottom: 20px;
+  }
+  .content__description {
+    display: none;
+  }
+  .content__images {
+    display: none;
   }
 }
 
