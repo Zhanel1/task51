@@ -835,7 +835,7 @@ body {
     font-size: 24px;
     line-height: 25px;
     text-align: center;
-    margin-bottom: 0px;
+    margin-bottom: -60px;
   }
   .roadmap .wrapper__row {
     padding-left: 16px;
@@ -867,6 +867,57 @@ body {
   .roadmap__levels {
     width: 214px;
     left: 84px;
+    margin-top: 50px;
+  }
+  .roadmap .title {
+    font-size: 20px;
+    line-height: 21px;
+    margin-left: -113px;
+  }
+  .roadmap .subtitle {
+    font-size: 18px;
+    line-height: 21px;
+    margin-left: -113px;
+  }
+  .roadmap li {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 200%;
+  }
+  .roadmap ul {
+    margin-left: -90px;
+    margin-bottom: 130px;
+    width: 190px;
+    list-style-image: url(../img/roadmap/3.svg);
+  }
+  .team .staff-4 .text {
+    font-size: 17px;
+    line-height: 150%;
+  }
+  .footer {
+    height: auto;
+  }
+  .footer .wrapper {
+    justify-content: center;
+  }
+  .footer__left {
+    width: 168px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    justify-self: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  .footer__left .title {
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  .footer__right {
+    margin-bottom: 20px;
   }
 }
 
@@ -883,12 +934,33 @@ body {
   }
 }
 
+@media (max-width: 1152px) {
+  .roadmap {
+    background-image: none;
+  }
+}
+
 @media (max-width: 850px) {
+  .team {
+    margin-bottom: 50px;
+  }
   .team .team-1 {
     flex-wrap: wrap;
   }
   .team .staff {
-    width: 288.61px;
+    width: 250px;
+    height: 285px;
+    margin-right: 0;
+  }
+  .team .staff .name {
+    position: absolute;
+    margin-top: 228px;
+    left: 0;
+  }
+  .team .staff .job {
+    position: absolute;
+    margin-top: 258px;
+    left: 122px;
   }
   .team .team-2 {
     flex-wrap: wrap;
@@ -897,11 +969,30 @@ body {
     height: 295px;
   }
   .team .staff-4 .text {
-    width: 205px;
+    font-size: 17px;
+    width: 100%;
+    position: unset;
     height: 158px;
-    margin-left: 22px;
-    margin-right: 22px;
-    margin-top: 86.68px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 118px;
+  }
+  .team .staff-4 .name {
+    position: absolute;
+    margin-top: 2px;
+    left: 21px;
+  }
+  .team .staff-4 .job {
+    position: absolute;
+    margin-top: 29px;
+    left: 21px;
+  }
+  .footer .wrapper {
+    flex-wrap: wrap;
+  }
+  .footer__left {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 /*# sourceMappingURL=index.css.map */

@@ -370,7 +370,9 @@ body{
         line-height: 150%;
     }
 }
-
+.solution{
+    // display: none;
+}
 .features{
     display: flex;
     width: 100vw;
@@ -781,7 +783,7 @@ body{
             font-size: 24px;
             line-height: 25px;
             text-align: center;
-            margin-bottom: 0px;
+            margin-bottom: -60px;
         }
         .wrapper__row{
             padding-left: 16px;
@@ -813,8 +815,65 @@ body{
         &__levels{
             width: 214px;
             left: 84px;
+            margin-top: 50px;
+        }
+        .title{
+            font-size: 20px;
+            line-height: 21px;
+            margin-left: -113px;
+        }
+        .subtitle{
+            font-size: 18px;
+            line-height: 21px;
+            margin-left: -113px;
+        }
+        li{
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 200%;
+        }
+        ul{
+            margin-left: -90px;
+            margin-bottom: 130px;
+            width: 190px;
+            list-style-image: url(../img/roadmap/3.svg);
+        }
+    }
+
+    .team{
+        .staff-4{
+            .text{
+                font-size: 17px;
+                line-height: 150%;;
+            }
         }
         
+    }
+
+    .footer{
+        height: auto;
+        .wrapper{
+            justify-content: center;
+        }
+        &__left{
+            width: 168px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 20px;
+            text-align: center;
+            justify-self: center;
+            margin-bottom: 15px;
+            margin-top: 15px;
+            .title{
+                width: 100%;
+                font-size: 12px;
+                text-align: center;
+                margin-bottom: 5px;
+            }
+        }
+        &__right{
+            margin-bottom: 20px;
+        }
     }
 
     
@@ -832,27 +891,67 @@ body{
         }
     }
 }
+@media (max-width: 1152px){
+    .roadmap{
+        background-image: none;
+    }
+}
 @media (max-width: 850px){
     .team{
+        margin-bottom: 50px;
         .team-1{
             flex-wrap: wrap;
         }
         .staff{
-            width: 288.61px;
+            width: 250px;
+            height: 285px;
+            margin-right: 0;
+            .name{
+                position: absolute;
+                margin-top: 228px;
+                left: 0;
+            }
+            .job{
+                position: absolute;
+                margin-top: 258px;
+                left: 122px;
+            }
         }
         .team-2{
             flex-wrap: wrap;
         }
         .staff-4{
-            
             height: 295px;
             .text{
-                width: 205px;
+                font-size: 17px;
+                width: 100%;
+                position: unset;
                 height: 158px;
-                margin-left: 22px;
-                margin-right: 22px;
-                margin-top: 86.68px;
+                margin-right: 0;
+                margin-left: 0;
+                margin-top: 118px;
             }
+            .name{
+                position: absolute;
+                margin-top: 2px;
+                left: 21px;
+            }
+            .job{
+                position: absolute;
+                margin-top: 29px;
+                left: 21px;
+                // top: 47px;
+                // left: 22px;
+            }
+        }
+    }
+    .footer{
+        .wrapper{
+            flex-wrap: wrap;
+        }
+        &__left{
+            flex-direction: row;
+            flex-wrap: wrap;
         }
     }
 }
