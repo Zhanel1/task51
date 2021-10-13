@@ -547,19 +547,20 @@ body{
         display: flex;
         justify-content: center;
         flex-direction: row;
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
     } 
     .team-1{
         display: flex;
         justify-content: center;
         flex-direction: row;
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
     }
     .team-2{
         display: flex;
         justify-content: center;
         flex-direction: row;
-        flex-wrap: wrap;
+        columns: 2;
+        // flex-wrap: wrap;
     }
     .staff{
         position: relative;
@@ -573,7 +574,7 @@ body{
         /* Note: backdrop-filter has minimal browser support */
         border-radius: 25px;
         margin-right: 30px;
-        margin-bottom: 40px;
+        margin-bottom: 50px;
         width: 340px;
         padding: 30px 23px;
 
@@ -633,8 +634,11 @@ body{
             left: -20px;
         }
     }
+    .staff-2{
+        margin-right: 0;
+    }
     .staff-4{
-        
+        margin-right: 0;
         .name{
             text-align: left;
         }
@@ -819,5 +823,36 @@ body{
     .staff{
         width: 340px;
         height: 388px;
+    }
+}
+@media (max-width: 1680px){
+    .team{
+        .people{
+            flex-wrap: wrap;
+        }
+    }
+}
+@media (max-width: 850px){
+    .team{
+        .team-1{
+            flex-wrap: wrap;
+        }
+        .staff{
+            width: 288.61px;
+        }
+        .team-2{
+            flex-wrap: wrap;
+        }
+        .staff-4{
+            
+            height: 295px;
+            .text{
+                width: 205px;
+                height: 158px;
+                margin-left: 22px;
+                margin-right: 22px;
+                margin-top: 86.68px;
+            }
+        }
     }
 }
