@@ -31,7 +31,7 @@ var onScrollHandler = function() {
      yourImageElement.style.height = '573px'
       yourImageElement.src = './img/how/4.png'
     }
-    else if(scrollTop > 4092 && scrollTop < 1850){
+    else if(scrollTop > 4665 && scrollTop < 1850){
       yourImageElement.style.position = 'auto'   
      yourImageElement.style.top = '0'
      yourImageElement.style.width = '740px'

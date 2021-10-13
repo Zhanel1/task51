@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <link rel="stylesheet" href="./css/index.css">
     <title></title>
 </head>
@@ -14,23 +14,28 @@
                 <div class="rectangle"></div>
                 <div class="logo__text">logo</div>
             </div>
-            <div class="header__nav">
-                <div class="header__link">
-                    <a href="#about" class="link about">About</a>
-                </div>
-                <div class="header__link">
-                    <a href="#content" class="link">How it works</a>
-                </div>
-                <div class="header__link">
-                    <a href="#features" class="link">Advantages</a>
-                </div>
-                <div class="header__link">
-                    <a href="#roadmap" class="link">Road map</a>
-                </div>
-                <div class="header__link">
-                    <a href="#team" class="link">team</a>
-                </div>
+            <div class="header__burger">
+                <img src="./img/header/burger.svg" alt="" class="burger">
             </div>
+            <nav class="header__menu">
+                <ul class="header__list">
+                    <li class="header__link">
+                        <a href="#about" class="link about">About</a>
+                    </li>
+                    <li class="header__link">
+                        <a href="#content" class="link">How it works</a>
+                    </li>
+                    <li class="header__link">
+                        <a href="#features" class="link">Advantages</a>
+                    </li>
+                    <li class="header__link">
+                        <a href="#roadmap" class="link">Road map</a>
+                    </li>
+                    <li class="header__link">
+                        <a href="#team" class="link">team</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
     <div class="main">
@@ -196,42 +201,64 @@
                     <div class="level_1">
                         <div class="titles">
                             <p class="title"><b>Level 1</b></p>
-                            <p class="subtitle"><b>Q3- Q4</b></p>
+                            <p class="subtitle"><b>MVP</b></p>
                         </div>
                         <ul class="list">
-                            <li class="item">10+ Chains</li>
-                            <li class="item">100+ DeFi services</li>
-                            <li class="item">1000+ Cryptocurrencies</li>
+                            <li class="item">NFT Marketplace</li>
+                            <li class="item">NFT social media built on Ethereum</li>
+                            <li class="item">Collection creating</li>
+                            <li class="item">NFT wallet</li>
+                            <li class="item">Likes and comments</li>
+                            <li class="item">Friend requestsg</li>
+                            <li class="item">Chatt</li>
+                            <li class="item">Feed</li>
+                            <li class="item">NFT categories</li>
                         </ul>
                     </div>
                     <div class="level_2">
                         <div class="titles">
                             <p class="title"><b>Level 2</b></p>
-                            <p class="subtitle"><b>Q1- Q2</b></p>
+                            <p class="subtitle"><b>Q1</b></p>
                         </div>
                         <ul class="list">
-                            <li class="item">Crosschain exchange</li>
-                            <li class="item">Crypto ETF indexes</li>
-                            <li class="item">DeFi mining</li>
-                            <li class="item">Transaction analytics</li>
-                            <li class="item">Algorithmic trade & rebalancing</li>
-                            <li class="item">NFT platform</li>
-                            <li class="item">Sending cryptocurrencies via chats</li>
+                            <li class="item">Rating of NFT profiles</li>
+                            <li class="item">Creating new NFT categories</li>
+                            <li class="item">Users will be able to raise their levels</li>
+                            <li class="item">Royalty – the author of the sailed NFT will get 2% commission of every resale </li>
+                            <li class="item">Users can donate to authors of the liked NFTs </li>
+                            <li class="item">Charity</li>
                         </ul>
                     </div>
                     <div class="level_3">
                         <div class="titles">
                             <p class="title"><b>Level 3</b></p>
-                            <p class="subtitle"><b>Q3- Q4</b></p>
+                            <p class="subtitle"><b>Q2</b></p>
                         </div>
                         <ul class="list">
-                            <li class="item">DeFi full functionality services</li>
-                            <li class="item">Multisig corporate wallet</li>
-                            <li class="item">Tokenized IPO analytics</li>
-                            <li class="item">Derivatives</li>
-                            <li class="item">Insurance</li>
-                            <li class="item">Lending</li>
-                            <li class="item">All crossed chains</li>
+                            <li class="item">Adding possibility to improve NFTs by user’s physical activity in the social media </li>
+                            <li class="item">Adding a function for earning and staking</li>
+                            <li class="item">Gaining the value of profiles by raising users’ levels</li>
+                        </ul>
+                    </div>
+                    <div class="level_4">
+                        <div class="titles">
+                            <p class="title"><b>Level 4</b></p>
+                            <p class="subtitle"><b>Q3</b></p>
+                        </div>
+                        <ul class="list">
+                            <li class="item">Improvement of the functionality of the platform</li>
+                            <li class="item">Adding a possibility to buy NFTs from other nets (Solana, Avalanche etc.)</li>
+                            <li class="item">Personal analytics</li>
+                        </ul>
+                    </div>
+                    <div class="level_5">
+                        <div class="titles">
+                            <p class="title"><b>Level 5</b></p>
+                            <p class="subtitle"><b>Q4</b></p>
+                        </div>
+                        <ul class="list">
+                            <li class="item">The possibility to run targeting advertisement</li>
+                            <li class="item">Advertising analytics</li>
                         </ul>
                     </div>
                 </div>
@@ -243,68 +270,72 @@
         <div class="wrapper">
             <div class="carts__title">team</div>
             <div class="people">
-                <div class="staff staff-1">
-                    <div class="image">
-                        <img src="./img/team/11.png" alt="" class="item item_2">
+                <div class="team-1">
+                    <div class="staff staff-1">
+                        <div class="image">
+                            <img src="./img/team/11.png" alt="" class="item item_2">
+                        </div>
+                        <div class="name">
+                            Daniel Sam
+                        </div>
+                        <div class="job">
+                            SEO
+                        </div>
+    
+                        <div class="sphere sphere1">
+                            <img src="./img/team/Sphere_a1.png"/>
+                        </div>
                     </div>
-                    <div class="name">
-                        Daniel Sam
-                    </div>
-                    <div class="job">
-                        SEO
-                    </div>
-
-                    <div class="sphere sphere1">
-                        <img src="./img/team/Sphere_a1.png"/>
-                    </div>
-                </div>
-            
-                <div class="staff staff-2">
-                    <div class="image">
-                        <img src="./img/team/11.png" alt="" class="item item_2">
-                    </div>
-                    <div class="name">
-                        Daniel Sam
-                    </div>
-                    <div class="job">
-                        SEO
-                    </div>
-                    <div class="sphere sphere2">
-                        <img src="./img/team/Sphere_a2.png"/>
-                    </div>
-                </div>
-                <div class="staff staff-3">
-                    <div class="image">
-                        <img src="./img/team/11.png" alt="" class="item item_2">
-                    </div>
-                    <div class="name">
-                        Daniel Sam
-                    </div>
-                    <div class="job">
-                        SEO
-                    </div>
-                    <div class="sphere sphere3">
-                        <img src="./img/team/Sphere_a3.png"/>
+                
+                    <div class="staff staff-2">
+                        <div class="image">
+                            <img src="./img/team/11.png" alt="" class="item item_2">
+                        </div>
+                        <div class="name">
+                            Daniel Sam
+                        </div>
+                        <div class="job">
+                            SEO
+                        </div>
+                        <div class="sphere sphere2">
+                            <img src="./img/team/Sphere_a2.png"/>
+                        </div>
                     </div>
                 </div>
-                <div class="staff staff-4">
-                    <div class="text">
-                        Staking is an activity where a user 
-                        locks or holds his funds in a cryptocurrency 
-                        wallet to participate in maintaining 
-                        the operations of a proof-of-stake 
-                        (PoS)-based blockchain system. It 
-                        is similar to crypto mining because 
-                        it helps a network 
+                <div class="team-2">
+                    <div class="staff staff-3">
+                        <div class="image">
+                            <img src="./img/team/11.png" alt="" class="item item_2">
+                        </div>
+                        <div class="name">
+                            Daniel Sam
+                        </div>
+                        <div class="job">
+                            SEO
+                        </div>
+                        <div class="sphere sphere3">
+                            <img src="./img/team/Sphere_a3.png"/>
+                        </div>
                     </div>
-                    <div class="name">
-                        Daniel Sam
-                    </div>
-                    <div class="job">
-                        SEO
-                    </div>
-                    <div class="sphere sphere4">
-                        <img src="./img/team/Sphere_a4.png"/>
+                    <div class="staff staff-4">
+                        <div class="text">
+                            Staking is an activity where a user 
+                            locks or holds his funds in a cryptocurrency 
+                            wallet to participate in maintaining 
+                            the operations of a proof-of-stake 
+                            (PoS)-based blockchain system. It 
+                            is similar to crypto mining because 
+                            it helps a network 
+                        </div>
+                        <div class="name">
+                            Daniel Sam
+                        </div>
+                        <div class="job">
+                            SEO
+                        </div>
+                        <div class="sphere sphere4">
+                            <img src="./img/team/Sphere_a4.png"/>
+                        </div>
                     </div>
                 </div>
             </div>  
