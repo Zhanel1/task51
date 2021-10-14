@@ -73,18 +73,6 @@ body {
   display: none;
 }
 
-@media (max-width: 767px) {
-  .header .header__burger {
-    display: block;
-    position: relative;
-    width: 14px;
-    height: 12px;
-  }
-  .header .header__burger img {
-    width: 100%;
-  }
-}
-
 .wrapper {
   width: 80vw;
   height: 100%;
@@ -837,6 +825,164 @@ body {
   align-content: center;
 }
 
+@media (min-width: 2100px) {
+  .staff {
+    width: 340px;
+    height: 388px;
+  }
+}
+
+@media (max-width: 1680px) {
+  .team .people {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1152px) {
+  .header__menu {
+    display: none;
+  }
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 14px;
+    height: 12px;
+  }
+  .header__burger img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1152px) and (max-width: 767px) {
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 14px;
+    height: 12px;
+  }
+  .header__burger img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1152px) {
+  .roadmap {
+    background-image: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer .wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer__left {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .main {
+    justify-content: center;
+    background-color: #4FA0FF;
+    background-image: url(../img/main/bg2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .main-body {
+    justify-content: center;
+    margin: 0;
+  }
+  .main__titles {
+    width: 60%;
+    justify-content: unset;
+    text-align: center;
+    align-self: flex-start;
+    align-content: center;
+    margin-top: 341px;
+  }
+  .main .text1 {
+    display: flex;
+    align-self: center;
+    width: 100%;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 39px;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-left: 140px;
+  }
+  .main .text2 {
+    width: 100%;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 150%;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  .main .text3 {
+    width: 100%;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    font-size: 22px;
+    line-height: 150%;
+    margin-left: 135px;
+  }
+}
+
+@media (max-width: 850px) {
+  .team {
+    margin-bottom: 50px;
+  }
+  .team .team-1 {
+    flex-wrap: wrap;
+  }
+  .team .staff {
+    width: 250px;
+    height: 285px;
+    margin-right: 0;
+  }
+  .team .staff .name {
+    position: absolute;
+    margin-top: 228px;
+    left: 0;
+  }
+  .team .staff .job {
+    position: absolute;
+    margin-top: 258px;
+    left: 122px;
+  }
+  .team .team-2 {
+    flex-wrap: wrap;
+  }
+  .team .staff-4 {
+    height: 295px;
+  }
+  .team .staff-4 .text {
+    font-size: 17px;
+    width: 100%;
+    position: unset;
+    height: 158px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 118px;
+  }
+  .team .staff-4 .name {
+    position: absolute;
+    margin-top: 2px;
+    left: 21px;
+  }
+  .team .staff-4 .job {
+    position: absolute;
+    margin-top: 29px;
+    left: 21px;
+  }
+}
+
 @media (max-width: 375px) {
   .pluses {
     height: 100%;
@@ -1061,140 +1207,6 @@ body {
     font-size: 12px;
     line-height: 150%;
     margin-left: 56px;
-  }
-}
-
-@media (min-width: 2100px) {
-  .staff {
-    width: 340px;
-    height: 388px;
-  }
-}
-
-@media (max-width: 1680px) {
-  .team .people {
-    flex-wrap: wrap;
-  }
-}
-
-@media (max-width: 1152px) {
-  .header__menu {
-    display: none;
-  }
-  .roadmap {
-    background-image: none;
-  }
-}
-
-@media (max-width: 1024px) {
-  .footer .wrapper {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .footer__left {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .main {
-    justify-content: center;
-    background-color: #4FA0FF;
-    background-image: url(../img/main/bg2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .main-body {
-    justify-content: center;
-    margin: 0;
-  }
-  .main__titles {
-    width: 60%;
-    justify-content: unset;
-    text-align: center;
-    align-self: flex-start;
-    align-content: center;
-    margin-top: 341px;
-  }
-  .main .text1 {
-    display: flex;
-    align-self: center;
-    width: 100%;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 80px;
-    line-height: 39px;
-    text-align: center;
-    margin-bottom: 40px;
-    margin-left: 140px;
-  }
-  .main .text2 {
-    width: 100%;
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 150%;
-    text-align: center;
-    margin-bottom: 16px;
-  }
-  .main .text3 {
-    width: 100%;
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: normal;
-    text-align: center;
-    font-size: 22px;
-    line-height: 150%;
-    margin-left: 135px;
-  }
-}
-
-@media (max-width: 850px) {
-  .team {
-    margin-bottom: 50px;
-  }
-  .team .team-1 {
-    flex-wrap: wrap;
-  }
-  .team .staff {
-    width: 250px;
-    height: 285px;
-    margin-right: 0;
-  }
-  .team .staff .name {
-    position: absolute;
-    margin-top: 228px;
-    left: 0;
-  }
-  .team .staff .job {
-    position: absolute;
-    margin-top: 258px;
-    left: 122px;
-  }
-  .team .team-2 {
-    flex-wrap: wrap;
-  }
-  .team .staff-4 {
-    height: 295px;
-  }
-  .team .staff-4 .text {
-    font-size: 17px;
-    width: 100%;
-    position: unset;
-    height: 158px;
-    margin-right: 0;
-    margin-left: 0;
-    margin-top: 118px;
-  }
-  .team .staff-4 .name {
-    position: absolute;
-    margin-top: 2px;
-    left: 21px;
-  }
-  .team .staff-4 .job {
-    position: absolute;
-    margin-top: 29px;
-    left: 21px;
   }
 }
 /*# sourceMappingURL=index.css.map */
