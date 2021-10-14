@@ -20,6 +20,7 @@ body{
     position: fixed;
     background: $dark;
     justify-content: center;
+    z-index: 30;
 
     .wrapper{
         
@@ -72,6 +73,15 @@ body{
     .header__burger{
         display: none;
     }
+    .header__dropdown{
+        display: none;
+        width: 100%;
+        height: auto;
+
+        .header__menu {
+            display: none;
+        }
+    }
 }
 
 .wrapper{
@@ -86,17 +96,19 @@ body{
     width: 100%;
     height: 100vh;
     margin-bottom: 80px;
+    padding-top: 80px;
     display: flex;
     background-color: $blue;
-    background-image: url(../img/main_bg.png);
-    background-size: cover;
 
     &-body{
         display: flex;
         margin: 0 auto;
-        width: 80vw;
+        padding: 0 10%;
+        width: 100%;
         height: 100%;
         justify-content: flex-start;
+        background-image: url(../img/main_bg.png);
+        background-size: 100% 100%;
     }
 
     &__titles{
@@ -772,33 +784,46 @@ body{
             flex-wrap: wrap;
         }
     }
+    .content{
+        .wrapper{
+            &__images{
+                width: auto;
+            }
+        }
+    }
 }
 @media (max-width: 1152px){
     .header{
-        &__menu{
-            display: none;
-        }
-        &__burger{
+        .header__dropdown{
             display: block;
-            position: relative;
-            width: 14px;
-            height: 12px;
-            img{
-                width: 100%;
+            width: 100%;
+            height: auto;
+    
+            .header__menu {
+                display: block;
             }
         }
-    }
-    @media (max-width:767px){
+
+        .wrapper{
+            padding: 0 16px;
+            width: 100%;
+            margin: 0;
+        }
+
+        .header__menu{
+            display: none;
+        }
         .header__burger{
             display: block;
             position: relative;
-            width: 14px;
-            height: 12px;
+            width: 20px;
+            height: 20px;
             img{
                 width: 100%;
             }
         }
     }
+    
     .roadmap{
         background-image: none;
     }
@@ -823,6 +848,7 @@ body{
 
         &-body{
             justify-content: center;
+            background-image: none;
             margin: 0;
         }
         &__titles{
@@ -870,6 +896,28 @@ body{
     }
 }
 @media (max-width: 850px){
+
+    .header {
+        height: auto;
+
+        .header__dropdown {
+            height: 200px;
+
+            .header__menu {
+                height: 100%;
+
+                .header__list {
+                    width: 100%;
+                    height: 100%;
+                }
+                .header__link{
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+
     .team{
         margin-bottom: 50px;
         .team-1{
@@ -919,7 +967,37 @@ body{
         }
     }
 }
-@media (max-width:375px){
+@media (max-width: 767px) {
+    .header{
+        flex-direction: column;
+        &__menu{
+            display: none;
+        }
+        .rectangle{
+            display: blockr;
+        }
+        &__burger{
+            display: block;
+            position: relative;
+            width: 14px;
+            height: 12px;
+            img{
+                width: 100%;
+            }
+        }
+
+        &__dropdown {
+
+            .header__list {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-content: center;
+            }
+        }
+    }
+}
+@media (max-width:414px){
     .pluses{
         height: 100%;
         margin-bottom: 100px;
