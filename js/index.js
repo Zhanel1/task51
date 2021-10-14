@@ -1,10 +1,13 @@
 var onScrollHandler = function() {
    // элемент который будем менять
    var yourImageElement = document.getElementById('content__1')
+   var content1 = document.getElementById('item1')
+
    // позиция скролла
    var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
  
-   console.log(scrollTop);
+  //  console.log(scrollTop);
+   console.log(content1.offsetTop)
    // проверка на определенных местах по пикселям..
    if (scrollTop > 2400 && scrollTop < 2946) {
      // меняем то что нужно
